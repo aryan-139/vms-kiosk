@@ -12,9 +12,14 @@ const ExistingVisitorPage = () => {
         <TextField id="outlined-basic" label="Visitor ID" variant="outlined" margin="normal" sx={{width:"90%"}}/>
         <TextField id="outlined-basic" label="Purpose" variant="outlined" margin="normal" sx={{width:"90%"}} />
        
+        <Box sx={{ display: 'flex', justifyContent: 'center', gap: '16px', marginTop: '16px' }}>
         <Button variant="contained" component={Link} to="/checkedin">
           Check In
         </Button>
+        <Button variant="contained" component={Link} to="/checkedout">
+          Check Out
+        </Button>
+      </Box>
       </Box>
     </div>
   )

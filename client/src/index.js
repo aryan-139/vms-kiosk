@@ -8,6 +8,7 @@ import Navbar from './components/Navbar';
 import NewVisitorPage from './components/NewVisitorPage';
 import ExistingVisitorPage from './components/ExistingVisitorPage';
 import CheckedInPage from './components/CheckedInPage';
+import CheckedOutPage from './components/CheckedOutPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -17,6 +18,7 @@ root.render(
     <Route path="/new" element={<NewVisitorPage />} />
     <Route path="/existing" element={<ExistingVisitorPage />} />
     <Route path="/checkedin" element={<CheckedInPage />} />
+    <Route path="/checkedout" element={<CheckedOutPage />} />
   </Routes>
   
   </BrowserRouter>
