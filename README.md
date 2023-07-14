@@ -1,6 +1,6 @@
 # Visitor Management System Documentation
 
-The Visitor Management System is a web application that allows organizations to manage the check-in and check-out process for visitors. It provides a user-friendly interface for capturing visitor details, storing them in a database, and facilitating a smooth visitor management process.
+The Visitor Management System is a web application built in React that allows organizations to manage the check-in and check-out process for visitors. It provides a user-friendly interface for capturing visitor details, storing them in a database, providing a unique QR code for every entry and facilitating a smooth visitor management process.
 
 ## Technologies Used
 
@@ -19,14 +19,19 @@ The Visitor Management System is built using the following technologies:
 
 The project follows a client-server architecture, with the front-end and back-end components separated into different directories:
 
-client/ # Contains the front-end React application
-src/ # Contains the source code for React components, styles, and routes
-public/ # Contains the HTML template and other static assets
+client/
+  ├── src/
+  │   ├── components/        # Contains React components
+  │   ├── App.js             # Contains the Home Screen Render
+  │   └── index.js           # Entry point of the front-end application
+  └── public/
+      ├── index.html          # HTML template
+      └── assets/             # Contains static assets
 
-server/ # Contains the back-end Node.js application
-index.js # The main entry point of the server application
-routes.js # Defines the API routes for handling check-in and check-out requests
-database.js # Handles the database connection and query execution
+server/
+  ├── index.js                # Entry point of the back-end application
+  └── database.js            # Handles the database connection and query execution
+
 
 
 ## Installation and Setup
@@ -39,9 +44,10 @@ To run the Visitor Management System locally, follow these steps:
 4. Install the project dependencies by running the command: `npm install`.
 5. Set up the MySQL database by creating a new database and importing the provided SQL schema.
 6. Configure the database connection details in `server/database.js`.
-7. Start the server by running the command: `npm run start:server`.
+7. Start the server by running the command: `npm run dev:server`.
 8. Start the client application by running the command: `npm run start:client`.
 9. Access the Visitor Management System in a web browser at `http://localhost:3000`.
+10. Access the Visitor Management Server at `http://localhost:3001`.
 
 ## Usage
 
